@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="form_margin_top">10dp</dimen>
+    <dimen name="floating_label">15dp</dimen>
+    <dimen name="button_margin_top">20dp</dimen>
+    <dimen name="confirmar_datos_titulo">25dp</dimen>
+    <dimen name="conf_nombre">18dp</dimen>
+    <dimen name="conf_text">17dp</dimen>
+    <dimen name="conf_margin_top">5dp</dimen>
+    <dimen name="conf_margin_left">3dp</dimen>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="joseduin.formulario.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/form_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/button_margin_top"
+            android:theme="@style/confirmar_datos_titulo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin_top"
+            android:hint="@string/nombre_comlpeto"
+            hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <FrameLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin_top"
+                android:hint="@string/fecha_nacimiento"
+                hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_date_range"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/colorTransparente"
+                android:paddingRight="10dp"
+                android:id="@+id/butonFechaNacimiento"/>
+
+        </FrameLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin_top"
+            android:hint="@string/telefono"
+            hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin_top"
+            android:hint="@string/email"
+            hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin_top"
+            android:hint="@string/descripcion_contacto"
+            hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="@string/texto_boton_siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texto"
+            android:theme="@style/MiBotonRaised"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:id="@+id/botonSiguiente" />
+
+    </LinearLayout>
+
+</ScrollView>
