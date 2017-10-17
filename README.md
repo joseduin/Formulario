@@ -17,5 +17,4 @@ Alternatively, you can use 3 backtick quote marks before and after the block, li
 This is a code block
 ```
 
-##``GET`` ###### /algo
-epale
+``GET`` /una vaina
